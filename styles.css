@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/*
+*  CSS TABLE OF CONTENTS
+*
+*  1.0 - Header & Navbar
+*  2.0 - Welcome section
+*  3.0 - Skills section
+*  4.0 - Articles section
+*  5.0 - Contact section
+*  6.0 - Footer
+*  7.0 - Animations
+*  8.0 - Section connectors
+*  9.0 - Media queries
+*/
+
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  max-width: 100%;
+}
+body {
+  color: #024;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: grid;
+}
+
+body p, a{
+  font-size: 1.25em;
+}
+main{background-color: #FFEBC6}
+
+/*** 1.0 - Header & Navbar ***/
+nav {
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: none;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+}
+.toggle-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 1.25rem;
+  padding: 1em;
+}
+
+.toggle-bar {
+  height: 4px;
+  width: 100%;
+  background-color: #424c55;
+  border-radius: 10px;
+}
+
+.mobile-menu {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style-type: none;
+  padding-top:2vh;
+}
+
+.mobile-menu li {
+  text-decoration: none;
+  padding-top: 0.5em;
+}
+
+.links {
+  font-size: 2em;
+  text-decoration: none;
+  color: #424c55;
+}
+
+.links:hover {
+  transition: ease-in 200ms;
+  color: #73a3a5;
+}
+
+#contact-link:hover{
+  border:2px solid black;
+  border-radius: 10px;
+  padding:1em;
+  background-color: #73a3a5;
+  color:white;
+}
+
+/*** 2.0 - Welcome section ***/
+#welcome-page {
+  margin: 2em;
+  font-size: 2em;
+}
+
+#welcome-page p {
+  text-align: justify;
+}
+
+#welcome-page h1 {
+  padding: 1em;
+}
+
+/*** 2.0 - About me section ***/
+#about {
+  padding:3em 1em 2em 1em;
+  background-color: #73a3a5;
+  text-align: center;
+}
+
+#about h2 {
+  opacity: 70%;
+	color:white;
+}
+
+#about-lenght{
+	display: flex;
+	padding:0.5em;
+	justify-content: center;
+}
+
+#aboutme{
+  padding: 1em 3em 1em 3em;
+  text-align: center;
+}
+
+#short-button, #normal-button, #long-button{
+	font-size: 1em;
+	width:8em;
+  padding: 1em;
+  margin: 1em;
+	background-color: transparent;
+	border-radius: 5px;
+	border: solid 2px #4D5382;
+	transition: 250ms ease-in-out;
+}
+#short-button:hover, #normal-button:hover, #long-button:hover{
+	background-color: #4D5382;
+	color:white;
+	transform: translateY(-5px);
+}
+
+/*** 3.0 Skills section ***/
+#skills {
+	padding-top: 2em;
+  padding-bottom:3em;
+  height: auto;
+  background-color: #4D5382;
+  color: white;
+}
+
+#skills p{
+  text-align: center;
+  padding: 2.5em;
+}
+
+
+#images{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  padding:2em;
+}
+
+
+#skills h2{
+	display: flex;
+	justify-content: flex-end;
+	transform: translateY(-3em);
+	padding-right: 1em;
+	color: white;
+	font-size:2em;
+}
+
+#skills img,svg{
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  transition: 200ms ease-in-out;
+}
+.row{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#skills img:hover,svg:hover{
+  height: 100px;
+  width: 100px;
+}
+/*** 4.0 Articles section ***/
+
+#articles{
+  background-color: #F7BFB4;
+  height: 40vh;
+  padding: 2em;
+  text-align: center;
+}
+
+#articles  h3{
+  padding:2em;
+}
+#articles a{
+  color: white;
+}
+
+#articles p{
+  opacity: 60%;
+  text-decoration: line-through;
+}
+
+/*** 5.0 Contact ***/
+#contact {
+  padding: 1.25em 1.25em 4em 1.25em;
+  justify-content: center;
+  background-color: #89bd9e;
+}
+
+#contact h3{
+  font-size: 2.5em;
+}
+
+#contact-container{
+  padding:2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#contact a{
+  font-size: 1.25em;
+  background-color: transparent;
+	border-radius: 5px;
+	border: solid 2px #4D5382;
+	transition: 250ms ease-in-out;
+  text-decoration: none;
+  color:white;
+  padding:0.75em;
+}
+#contact a:hover{
+  background-color: #4D5382;
+}
+
+/***  6.0 Footer ***/
+footer {
+  background-color: #424c55;
+  color: white;
+  display: flex;
+  font-size: 0.8em;
+  padding: 2em 1em 2em 1em;
+  justify-content: space-around;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  padding-top: 0.5em;
+}
+
+.menu1, .menu2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25em;
+}
+
+.footer-links{
+  font-size: 1.25em;
+  color: #FFEBC6;
+}
+
+.footer-links:hover{
+  color:#4D5382;
+}
+/*** 7.0 Animations ***/
+
+.slide-right {
+  overflow: hidden;
+  font-size: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-right h1 {
+  animation: 2s slide-right 1s forwards;
+  transform: translateX(-500%);
+}
+
+@keyframes slide-right {
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-up {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-up img {
+  animation: 2s slide-up 1s forwards;
+  transform: translateY(-101%);
+  width: 50vh;
+  height: auto;
+}
+
+@keyframes slide-up {
+  to {
+    transform: translateY(0%);
+  }
+}
+/*** 8.0 Section connectors ***/
+.divider1{
+	display: flex;
+	text-align: right;
+	height: 5em;
+	 background: linear-gradient(6deg, #73a3a5 50%, #FFEBC6 50%);
+ }
+
+.divider2{
+	display: flex;
+	text-align: right;
+	height: 5em;
+	 background: linear-gradient(-6deg, #4D5382 50%, #73a3a5 50%);
+}
+
+.divide-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+.divider3-1{
+  height: 5em;
+  width: 50%;
+  background: linear-gradient(9deg, #F7BFB4 50%, #4D5382 50%);
+  }
+.divider3-2{
+  height: 5em;
+  width: 50%;
+  background: linear-gradient(-9deg, #F7BFB4 50%, #4D5382 50%);
+  }
+
+
+/*** 9.0 Media queries  ***/
+
+@media screen and (min-width:550px) {
+
+  .navbar {
+    list-style-type: none;
+    display: flex;
+    padding: 1.5em;
+    justify-content: center;
+  }
+
+  .header-wrapper{
+    position: relative;
+  }
+
+  .navbar li {
+    padding: 1em;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  #articles{
+    height: 30vh;
+  }
+  #about {
+		text-align: center;
+		justify-content: center;
+		padding:1em;
+  }
+
+  #skills h2{
+		font-size:3em;
+	}
+
+  .divider1, .divider2, .divider3-1, .divider3-2, .divider4-1, .divider4-2{
+		height: 12em;
+  }
+}
