@@ -7,6 +7,6 @@ Simple portoflio created using only plain HTML/CSS and JavaScript.
 Website made as a part of a assignment for a front-end course.
 It was supposed to be build with a mobile first approach without any frameworks and external libraries.
 
-##Demo
+## Demo
 
-preeminent-lebkuchen-c9fe4c.netlify.app
+[Link](preeminent-lebkuchen-c9fe4c.netlify.app)
